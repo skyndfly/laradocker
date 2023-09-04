@@ -10,10 +10,12 @@ services:
     ports:
       - "8876:80"
     depends_on:
-      - php
+      - app
 
-  php:
-    image: php:8.2-fpm
+  app:
+    build:
+      context: .
+      dockerfile: docker/app/Dockerfile
     container_name: php
     volumes:
       - ./:/var/www
