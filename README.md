@@ -1,4 +1,4 @@
-# Установка 
+# Install 
 
-Используйте команду `docker-compose up -d` для запуска контейнеров.  
-Используйте команду `docker-compose down` для остановки контейнеров.
+Use the command `docker-compose up -d` to start the containers.  
+Use the command `docker-compose down` to stop the containers.
