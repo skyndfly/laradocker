@@ -2,8 +2,9 @@
 
 1. Первым шагом установить laravel с помощью команды `composer create-poject laravel/laravel <project_name>`; 
 2. Копировать папку `docker` и  файл `docker-compose.yaml` в новосозданный проект laravel;
-3. Проверить совпадение данных подключеения к БД в файлах `docker-compose.yaml` и `.env` (`DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`);
-4. В файле `.env` для переменной `DB_CONNECTION` указать значением `container_name`(у меня называется `mysql`), а для перменной `DB_HOST` имя образа?имя контейнера у меня `db`.
+3. В контейнере `php` выполнить комманду `composer install`;
+4. Проверить совпадение данных подключеения к БД в файлах `docker-compose.yaml` и `.env` (`DB_PORT`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`);
+5. файле `.env` для переменной `DB_CONNECTION` указать значением `container_name`(у меня называется `mysql`), а для перменной `DB_HOST` имя образа?имя контейнера у меня `db`.
 
 ## Ошибки
 
